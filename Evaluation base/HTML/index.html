@@ -1,0 +1,27 @@
+<!--
+Auteur  :  Adam Gruber
+Date    : 15.11.2019
+Version : 1.0
+Projet  : index.html
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/CSS.css">
+</head>
+<body>
+    <h2>Inscription au tchoukball club Ste-Croix</h2>
+    <form action="motivation.html" id="form" class="form-group">
+        <label>Prénom</label><input type="text" name="txtFirstName" id="user_firstname"><div id="firstname_error" class="alert alert-danger">Invalide: trop court</div>
+        <label>Nom</label><input type="text" name="txtLastName" id="user_lastname"><div id="lastname_error" class="alert alert-danger">Invalide: trop court</div>
+        <label>Mot de passe</label><input type="password" id="user_password"><div id="password_error" class="alert alert-danger">Invalide: minimum 6 caractères</div>
+        <label>Confirmation</label><input type="password" id="user_password_confirmation"><div id="password_confirmation_error" class="alert alert-danger">Invalide: différent</div>
+        <input type="button" value="Envoyer" id="submit-button" class="btn btn-success">
+    </form>
+</body>
+<script src="../JavaScript/TakeData.js"></script>
+</html>

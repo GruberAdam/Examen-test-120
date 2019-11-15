@@ -1,0 +1,29 @@
+<!--
+Auteur  :  Adam Gruber
+Date    : 15.11.2019
+Version : 1.0
+Projet  : motivation.html
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Motivation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body onload="putData()">
+<div class="container-fluid flex-column">
+    <h2>Bonjour <span id="firstname">(prénom)</span> <span id="lastname">(nom)</span></h2>
+    <form action="thankyou.html">
+        <label>Veuillez décrire ci-dessous votre motivation à nous rejoindre, en au minimum 30 caractères et au maximum 144</label><br>
+        <textarea cols="60" rows="3" id="text_area" maxlength="144"></textarea>
+        <div id="too_short_error" class="alert alert-danger">Cette description est trop courte</div>
+        <div id="character_remaining_text" class="text-muted">Il vous reste <span id="character_remaining">144</span> caractères</div>
+        <input type="submit" value="Ok" id="button_ok">
+    </form>
+</div>
+</body>
+<script src="../JavaScript/PutData.js"></script>
+<script src="../JavaScript/MotivationChecker.js"></script>
+</html>
